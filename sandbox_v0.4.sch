@@ -2864,7 +2864,7 @@ OLD Production Socket. DO NOT USE for production boards.</description>
 <part name="OSC1" library="00-own_parts" deviceset="OSC_2.5X3.2" device=""/>
 <part name="U$150" library="00-own_parts" deviceset="GND" device=""/>
 <part name="U$151" library="00-own_parts" deviceset="VCC_3V3" device=""/>
-<part name="U2" library="c-scape" deviceset="W65C02S44" device="PLCC-SOCKET"/>
+<part name="U2" library="c-scape" deviceset="W65C02S44" device="PLCC-SOCKET" value="65C02/65C816"/>
 <part name="U$3" library="00-own_parts" deviceset="VCC_3V3" device=""/>
 <part name="U$4" library="00-own_parts" deviceset="VCC_3V3" device=""/>
 <part name="U$2" library="00-own_parts" deviceset="GND" device=""/>
@@ -3367,208 +3367,242 @@ OLD Production Socket. DO NOT USE for production boards.</description>
 <pinref part="U$4" gate="G$1" pin="VDD_3V3"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="CPU_A0" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="10A0"/>
 <wire x1="78.74" y1="187.96" x2="63.5" y2="187.96" width="0.1524" layer="91"/>
+<label x="63.5" y="188.214" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="CPU_A1" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="11A1"/>
 <wire x1="78.74" y1="185.42" x2="63.5" y2="185.42" width="0.1524" layer="91"/>
+<label x="63.5" y="185.674" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="CPU_A2" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="13A2"/>
 <wire x1="78.74" y1="182.88" x2="63.5" y2="182.88" width="0.1524" layer="91"/>
+<label x="63.5" y="183.134" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="CPU_A3" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="14A3"/>
 <wire x1="78.74" y1="180.34" x2="63.5" y2="180.34" width="0.1524" layer="91"/>
+<label x="63.5" y="180.594" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="CPU_A4" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="15A4"/>
 <wire x1="78.74" y1="177.8" x2="63.5" y2="177.8" width="0.1524" layer="91"/>
+<label x="63.5" y="178.054" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="CPU_A5" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="16A5"/>
 <wire x1="78.74" y1="175.26" x2="63.5" y2="175.26" width="0.1524" layer="91"/>
+<label x="63.5" y="175.514" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="CPU_A6" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="17A6"/>
 <wire x1="78.74" y1="172.72" x2="63.5" y2="172.72" width="0.1524" layer="91"/>
+<label x="63.5" y="172.974" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$21" class="0">
+<net name="CPU_A7" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="18A7"/>
 <wire x1="78.74" y1="170.18" x2="63.5" y2="170.18" width="0.1524" layer="91"/>
+<label x="63.5" y="170.434" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="CPU_A8" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="19A8"/>
 <wire x1="78.74" y1="167.64" x2="63.5" y2="167.64" width="0.1524" layer="91"/>
+<label x="63.5" y="167.894" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$23" class="0">
+<net name="CPU_A9" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="20A9"/>
 <wire x1="78.74" y1="165.1" x2="63.5" y2="165.1" width="0.1524" layer="91"/>
+<label x="63.5" y="165.354" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="CPU_A10" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="21A10"/>
 <wire x1="78.74" y1="162.56" x2="63.5" y2="162.56" width="0.1524" layer="91"/>
+<label x="63.5" y="162.814" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="CPU_A11" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="22A11"/>
 <wire x1="78.74" y1="160.02" x2="63.5" y2="160.02" width="0.1524" layer="91"/>
+<label x="63.5" y="160.274" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="CPU_A12" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="25A12"/>
 <wire x1="78.74" y1="157.48" x2="63.5" y2="157.48" width="0.1524" layer="91"/>
+<label x="63.5" y="157.734" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="CPU_A13" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="26A13"/>
 <wire x1="78.74" y1="154.94" x2="63.5" y2="154.94" width="0.1524" layer="91"/>
+<label x="63.5" y="155.194" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$28" class="0">
+<net name="CPU_A14" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="27A14"/>
 <wire x1="78.74" y1="152.4" x2="63.5" y2="152.4" width="0.1524" layer="91"/>
+<label x="63.5" y="152.654" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$29" class="0">
+<net name="CPU_A15" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="28A15"/>
 <wire x1="78.74" y1="149.86" x2="63.5" y2="149.86" width="0.1524" layer="91"/>
+<label x="63.5" y="150.114" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$30" class="0">
+<net name="CPU_D0" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="36D0"/>
 <wire x1="109.22" y1="187.96" x2="127" y2="187.96" width="0.1524" layer="91"/>
+<label x="119.38" y="188.214" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$31" class="0">
+<net name="CPU_D1" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="35D1"/>
 <wire x1="109.22" y1="185.42" x2="127" y2="185.42" width="0.1524" layer="91"/>
+<label x="119.38" y="185.674" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$32" class="0">
+<net name="CPU_D2" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="34D2"/>
 <wire x1="109.22" y1="182.88" x2="127" y2="182.88" width="0.1524" layer="91"/>
+<label x="119.38" y="183.134" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$33" class="0">
+<net name="CPU_D3" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="33D3"/>
 <wire x1="109.22" y1="180.34" x2="127" y2="180.34" width="0.1524" layer="91"/>
+<label x="119.38" y="180.594" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$34" class="0">
+<net name="CPU_D4" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="32D4"/>
 <wire x1="109.22" y1="177.8" x2="127" y2="177.8" width="0.1524" layer="91"/>
+<label x="119.38" y="178.054" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$35" class="0">
+<net name="CPU_D5" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="31D5"/>
 <wire x1="109.22" y1="175.26" x2="127" y2="175.26" width="0.1524" layer="91"/>
+<label x="119.38" y="175.514" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$36" class="0">
+<net name="CPU_D6" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="30D6"/>
 <wire x1="109.22" y1="172.72" x2="127" y2="172.72" width="0.1524" layer="91"/>
+<label x="119.38" y="172.974" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$37" class="0">
+<net name="CPU_D7" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="29D7"/>
 <wire x1="109.22" y1="170.18" x2="127" y2="170.18" width="0.1524" layer="91"/>
+<label x="119.38" y="170.434" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$38" class="0">
+<net name="CPU_RES" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="44RESB"/>
 <wire x1="109.22" y1="165.1" x2="127" y2="165.1" width="0.1524" layer="91"/>
+<label x="119.38" y="165.354" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$39" class="0">
+<net name="CPU_IRQ" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="5IRQB"/>
 <wire x1="109.22" y1="162.56" x2="127" y2="162.56" width="0.1524" layer="91"/>
+<label x="119.38" y="162.814" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$40" class="0">
+<net name="CPU_NMI" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="7NMIB"/>
 <wire x1="109.22" y1="160.02" x2="127" y2="160.02" width="0.1524" layer="91"/>
+<label x="119.38" y="160.274" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$41" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="8SYNC"/>
-<wire x1="109.22" y1="157.48" x2="127" y2="157.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$43" class="0">
+<net name="CPU_RDY" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="3RDY"/>
 <wire x1="109.22" y1="152.4" x2="127" y2="152.4" width="0.1524" layer="91"/>
+<label x="119.38" y="152.654" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$44" class="0">
+<net name="CPU_VP" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="2VPB"/>
 <wire x1="109.22" y1="149.86" x2="127" y2="149.86" width="0.1524" layer="91"/>
+<label x="119.38" y="150.114" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$47" class="0">
+<net name="CPU_RW" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="38RWB"/>
 <wire x1="109.22" y1="142.24" x2="127" y2="142.24" width="0.1524" layer="91"/>
+<label x="119.38" y="142.494" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$49" class="0">
+<net name="CPU_VDA" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="43PHI2O"/>
 <wire x1="78.74" y1="139.7" x2="63.5" y2="139.7" width="0.1524" layer="91"/>
+<label x="63.5" y="139.954" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$50" class="0">
+<net name="CPU_CLK" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="41PHI2"/>
 <wire x1="78.74" y1="142.24" x2="63.5" y2="142.24" width="0.1524" layer="91"/>
+<label x="63.5" y="142.494" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
-<net name="N$56" class="0">
+<net name="CPU_ABORT" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="4PHI1O"/>
 <wire x1="78.74" y1="144.78" x2="63.5" y2="144.78" width="0.1524" layer="91"/>
+<label x="63.5" y="145.034" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_VPA" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="8SYNC"/>
+<wire x1="109.22" y1="157.48" x2="127" y2="157.48" width="0.1524" layer="91"/>
+<label x="119.38" y="157.734" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
 </nets>
@@ -4203,7 +4237,7 @@ OLD Production Socket. DO NOT USE for production boards.</description>
 <wire x1="129.54" y1="154.94" x2="127" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RES" class="0">
+<net name="CPU_RES" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P144"/>
 <wire x1="55.88" y1="220.98" x2="25.4" y2="220.98" width="0.1524" layer="91"/>
@@ -4527,6 +4561,237 @@ OLD Production Socket. DO NOT USE for production boards.</description>
 <junction x="139.7" y="50.8"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="50.8" x2="139.7" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CPU_VP" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P141"/>
+<wire x1="55.88" y1="213.36" x2="33.02" y2="213.36" width="0.1524" layer="91"/>
+<label x="33.02" y="213.614" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_ABORT" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P140"/>
+<wire x1="55.88" y1="210.82" x2="33.02" y2="210.82" width="0.1524" layer="91"/>
+<label x="33.02" y="211.074" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_NMI" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P139"/>
+<wire x1="55.88" y1="208.28" x2="33.02" y2="208.28" width="0.1524" layer="91"/>
+<label x="33.02" y="208.534" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_VPA" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P138"/>
+<wire x1="55.88" y1="205.74" x2="33.02" y2="205.74" width="0.1524" layer="91"/>
+<label x="33.02" y="205.994" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_IRQ" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P137"/>
+<wire x1="55.88" y1="203.2" x2="33.02" y2="203.2" width="0.1524" layer="91"/>
+<label x="33.02" y="203.454" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_RDY" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P134"/>
+<wire x1="55.88" y1="200.66" x2="33.02" y2="200.66" width="0.1524" layer="91"/>
+<label x="33.02" y="200.914" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_VDA" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P133"/>
+<wire x1="55.88" y1="198.12" x2="33.02" y2="198.12" width="0.1524" layer="91"/>
+<label x="33.02" y="198.374" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_CLK" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P132"/>
+<wire x1="55.88" y1="195.58" x2="33.02" y2="195.58" width="0.1524" layer="91"/>
+<label x="33.02" y="195.834" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_A0" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P131"/>
+<wire x1="55.88" y1="193.04" x2="33.02" y2="193.04" width="0.1524" layer="91"/>
+<label x="33.02" y="193.294" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_RW" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P127"/>
+<wire x1="55.88" y1="190.5" x2="33.02" y2="190.5" width="0.1524" layer="91"/>
+<label x="33.02" y="190.754" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_A1" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P126"/>
+<wire x1="55.88" y1="187.96" x2="33.02" y2="187.96" width="0.1524" layer="91"/>
+<label x="33.02" y="188.214" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_D0" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P124"/>
+<wire x1="55.88" y1="185.42" x2="33.02" y2="185.42" width="0.1524" layer="91"/>
+<label x="33.02" y="185.674" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_D1" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P123"/>
+<wire x1="55.88" y1="182.88" x2="33.02" y2="182.88" width="0.1524" layer="91"/>
+<label x="33.02" y="183.134" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_A2" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P121"/>
+<wire x1="55.88" y1="180.34" x2="33.02" y2="180.34" width="0.1524" layer="91"/>
+<label x="33.02" y="180.594" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_A3" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P120"/>
+<wire x1="55.88" y1="177.8" x2="33.02" y2="177.8" width="0.1524" layer="91"/>
+<label x="33.02" y="178.054" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_D2" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P119"/>
+<wire x1="55.88" y1="175.26" x2="33.02" y2="175.26" width="0.1524" layer="91"/>
+<label x="33.02" y="175.514" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_D3" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P118"/>
+<wire x1="55.88" y1="172.72" x2="33.02" y2="172.72" width="0.1524" layer="91"/>
+<label x="33.02" y="172.974" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_A4" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P117"/>
+<wire x1="55.88" y1="170.18" x2="33.02" y2="170.18" width="0.1524" layer="91"/>
+<label x="33.02" y="170.434" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_A5" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P116"/>
+<wire x1="55.88" y1="167.64" x2="33.02" y2="167.64" width="0.1524" layer="91"/>
+<label x="33.02" y="167.894" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_D4" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P115"/>
+<wire x1="55.88" y1="165.1" x2="33.02" y2="165.1" width="0.1524" layer="91"/>
+<label x="33.02" y="165.354" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_D5" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P114"/>
+<wire x1="55.88" y1="162.56" x2="33.02" y2="162.56" width="0.1524" layer="91"/>
+<label x="33.02" y="162.814" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_A6" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P112"/>
+<wire x1="55.88" y1="160.02" x2="33.02" y2="160.02" width="0.1524" layer="91"/>
+<label x="33.02" y="160.274" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_A8" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P111"/>
+<wire x1="55.88" y1="157.48" x2="33.02" y2="157.48" width="0.1524" layer="91"/>
+<label x="33.02" y="157.734" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_A10" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P105"/>
+<wire x1="55.88" y1="152.4" x2="33.02" y2="152.4" width="0.1524" layer="91"/>
+<label x="33.02" y="152.654" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_A12" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P104"/>
+<wire x1="55.88" y1="149.86" x2="33.02" y2="149.86" width="0.1524" layer="91"/>
+<label x="33.02" y="150.114" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_A14" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P102"/>
+<wire x1="55.88" y1="147.32" x2="33.02" y2="147.32" width="0.1524" layer="91"/>
+<label x="33.02" y="147.574" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_D6" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P101"/>
+<wire x1="55.88" y1="144.78" x2="33.02" y2="144.78" width="0.1524" layer="91"/>
+<label x="33.02" y="145.034" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_D7" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P100"/>
+<wire x1="55.88" y1="142.24" x2="33.02" y2="142.24" width="0.1524" layer="91"/>
+<label x="33.02" y="142.494" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_A15" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P99"/>
+<wire x1="55.88" y1="139.7" x2="33.02" y2="139.7" width="0.1524" layer="91"/>
+<label x="33.02" y="139.954" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_A13" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P98"/>
+<wire x1="55.88" y1="137.16" x2="33.02" y2="137.16" width="0.1524" layer="91"/>
+<label x="33.02" y="137.414" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_A11" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P97"/>
+<wire x1="55.88" y1="134.62" x2="33.02" y2="134.62" width="0.1524" layer="91"/>
+<label x="33.02" y="134.874" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_A9" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P95"/>
+<wire x1="55.88" y1="132.08" x2="33.02" y2="132.08" width="0.1524" layer="91"/>
+<label x="33.02" y="132.334" size="1.27" layer="95" font="vector" ratio="10"/>
+</segment>
+</net>
+<net name="CPU_A7" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P94"/>
+<wire x1="55.88" y1="129.54" x2="33.02" y2="129.54" width="0.1524" layer="91"/>
+<label x="33.02" y="129.794" size="1.27" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
 </nets>
