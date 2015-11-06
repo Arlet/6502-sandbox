@@ -1589,6 +1589,15 @@ Amphenol L77HDE15SD1CH4F</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="0402-SMALL" package="0402-SMALL">
+<connects>
+<connect gate="L1" pin="P$1" pad="1"/>
+<connect gate="L1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -3758,12 +3767,12 @@ OLD Production Socket. DO NOT USE for production boards.</description>
 <part name="U$197" library="00-own_parts" deviceset="GND" device=""/>
 <part name="U$198" library="c-scape" deviceset="VCC_1V8" device=""/>
 <part name="U$199" library="c-scape" deviceset="VCC_1V8" device=""/>
-<part name="R36" library="c-scape" deviceset="RES" device="0402-SMALL"/>
-<part name="U$187" library="00-own_parts" deviceset="VCC" device=""/>
-<part name="R37" library="c-scape" deviceset="RES" device="0402-SMALL"/>
 <part name="C41" library="00-own_parts" deviceset="CAP0603" device="" value="10U"/>
 <part name="U$200" library="00-own_parts" deviceset="GND" device=""/>
 <part name="U$190" library="c-scape" deviceset="VCC_1V8" device=""/>
+<part name="U$187" library="00-own_parts" deviceset="VCC" device=""/>
+<part name="L2" library="c-scape" deviceset="BEAD" device="0402-SMALL"/>
+<part name="L3" library="c-scape" deviceset="BEAD" device="0402-SMALL"/>
 </parts>
 <sheets>
 <sheet>
@@ -3963,21 +3972,15 @@ OLD Production Socket. DO NOT USE for production boards.</description>
 <instance part="U$197" gate="G$1" x="101.6" y="91.44"/>
 <instance part="U$198" gate="G$1" x="96.52" y="96.52"/>
 <instance part="U$199" gate="G$1" x="101.6" y="96.52"/>
-<instance part="R36" gate="G$1" x="88.9" y="86.36" smashed="yes">
-<attribute name="NAME" x="90.17" y="86.36" size="1.27" layer="95" font="vector" ratio="10"/>
-<attribute name="VALUE" x="90.17" y="84.836" size="1.27" layer="96" font="vector" ratio="10"/>
-</instance>
-<instance part="U$187" gate="G$1" x="78.74" y="88.9"/>
-<instance part="R37" gate="G$1" x="78.74" y="86.36" smashed="yes">
-<attribute name="NAME" x="80.01" y="86.36" size="1.27" layer="95" font="vector" ratio="10"/>
-<attribute name="VALUE" x="80.01" y="84.836" size="1.27" layer="96" font="vector" ratio="10"/>
-</instance>
 <instance part="C41" gate="G$1" x="78.74" y="106.68" smashed="yes">
 <attribute name="NAME" x="77.724" y="101.6" size="1.27" layer="95" font="vector" ratio="10"/>
 <attribute name="VALUE" x="77.724" y="100.076" size="1.27" layer="96" font="vector" ratio="10"/>
 </instance>
 <instance part="U$200" gate="G$1" x="78.74" y="104.14"/>
 <instance part="U$190" gate="G$1" x="78.74" y="109.22"/>
+<instance part="U$187" gate="G$1" x="78.74" y="88.9"/>
+<instance part="L2" gate="L1" x="78.74" y="86.36" rot="R90"/>
+<instance part="L3" gate="L1" x="88.9" y="86.36" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -4585,30 +4588,30 @@ OLD Production Socket. DO NOT USE for production boards.</description>
 <pinref part="U$192" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="U$178" gate="G$1" pin="VCC"/>
-<pinref part="R36" gate="G$1" pin="1"/>
+<pinref part="U$187" gate="G$1" pin="VCC"/>
+<pinref part="L2" gate="L1" pin="P$1"/>
 </segment>
 <segment>
-<pinref part="U$187" gate="G$1" pin="VCC"/>
-<pinref part="R37" gate="G$1" pin="1"/>
+<pinref part="U$178" gate="G$1" pin="VCC"/>
+<pinref part="L3" gate="L1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="VDD@1"/>
-<pinref part="R36" gate="G$1" pin="2"/>
 <pinref part="CD1" gate="G$1" pin="1"/>
 <junction x="88.9" y="83.82"/>
 <pinref part="CD1" gate="G$1" pin="1"/>
+<pinref part="L3" gate="L1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="VDD_IO"/>
 <pinref part="CD3" gate="G$1" pin="1"/>
-<pinref part="R37" gate="G$1" pin="2"/>
+<pinref part="L2" gate="L1" pin="P$2"/>
 <junction x="78.74" y="83.82"/>
-<pinref part="R37" gate="G$1" pin="2"/>
+<pinref part="L2" gate="L1" pin="P$2"/>
 </segment>
 </net>
 </nets>
