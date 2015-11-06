@@ -1030,9 +1030,9 @@ Amphenol L77HDE15SD1CH4F</description>
 <pin name="VDD@1" x="5.08" y="27.94" visible="pad" length="short" rot="R270"/>
 <pin name="COMP" x="20.32" y="20.32" visible="pad" length="short" rot="R180"/>
 <pin name="RSET" x="20.32" y="15.24" visible="pad" length="short" rot="R180"/>
-<pin name="DAC1/Y/G/CVBS" x="20.32" y="7.62" visible="pad" length="short" rot="R180"/>
+<pin name="DAC1/Y/G/CVBS" x="20.32" y="5.08" visible="pad" length="short" rot="R180"/>
 <pin name="DAC2/PB/LUMA/B" x="20.32" y="2.54" visible="pad" length="short" rot="R180"/>
-<pin name="DAC3/PR/CHROMA/R" x="20.32" y="-2.54" visible="pad" length="short" rot="R180"/>
+<pin name="DAC3/PR/CHROMA/R" x="20.32" y="0" visible="pad" length="short" rot="R180"/>
 <pin name="EXT_LF" x="20.32" y="-22.86" visible="pad" length="short" rot="R180"/>
 <wire x1="-20.32" y1="25.4" x2="17.78" y2="25.4" width="0.1524" layer="94"/>
 <wire x1="17.78" y1="25.4" x2="17.78" y2="-30.48" width="0.1524" layer="94"/>
@@ -1056,9 +1056,9 @@ Amphenol L77HDE15SD1CH4F</description>
 <text x="-19.812" y="-23.368" size="1.27" layer="95" font="vector" ratio="10">ALSB/!SPI_SS</text>
 <text x="17.272" y="19.812" size="1.27" layer="95" font="vector" ratio="10" rot="MR0">COMP</text>
 <text x="17.272" y="14.732" size="1.27" layer="95" font="vector" ratio="10" rot="MR0">RSET</text>
-<text x="17.272" y="7.112" size="1.27" layer="95" font="vector" ratio="10" rot="MR0">DAC1/Y/G/CVBS</text>
+<text x="17.272" y="4.572" size="1.27" layer="95" font="vector" ratio="10" rot="MR0">DAC1/Y/G/CVBS</text>
 <text x="17.272" y="2.032" size="1.27" layer="95" font="vector" ratio="10" rot="MR0">DAC2/Pb/Luma/B</text>
-<text x="17.272" y="-3.048" size="1.27" layer="95" font="vector" ratio="10" rot="MR0">DAC3/Pr/Chroma/R</text>
+<text x="17.272" y="-0.508" size="1.27" layer="95" font="vector" ratio="10" rot="MR0">DAC3/Pr/Chroma/R</text>
 <text x="17.272" y="-23.368" size="1.27" layer="95" font="vector" ratio="10" rot="MR0">EXT_LF</text>
 <text x="-4.572" y="24.638" size="1.27" layer="95" font="vector" ratio="10" rot="MR270">VDD_IO</text>
 <text x="-2.032" y="24.638" size="1.27" layer="95" font="vector" ratio="10" rot="MR270">PVDD</text>
@@ -1071,23 +1071,32 @@ Amphenol L77HDE15SD1CH4F</description>
 <text x="5.588" y="-29.972" size="1.27" layer="95" font="vector" ratio="10" rot="R90">PGND</text>
 <text x="3.048" y="-29.972" size="1.27" layer="95" font="vector" ratio="10" rot="R90">AGND</text>
 <text x="12.192" y="-32.258" size="1.27" layer="95" font="vector" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="-10.16" size="1.27" layer="95" font="vector" ratio="10">ADV7391</text>
+<text x="-3.81" y="-5.08" size="1.27" layer="95" font="vector" ratio="10">ADV7391</text>
 </symbol>
 <symbol name="JACK_3.5MM_LUMBERG">
 <pin name="GRN" x="-5.08" y="7.62" visible="off" length="short"/>
-<pin name="BLU" x="-5.08" y="2.54" visible="off" length="short"/>
-<pin name="RED" x="-5.08" y="-2.54" visible="off" length="short"/>
-<pin name="GND" x="2.54" y="-10.16" visible="off" length="short" rot="R90"/>
-<wire x1="-2.54" y1="-7.62" x2="-2.54" y2="10.16" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="10.16" x2="7.62" y2="10.16" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="10.16" x2="7.62" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="-2.54" y2="-7.62" width="0.1524" layer="94"/>
-<text x="-2.032" y="7.112" size="1.27" layer="95" font="vector" ratio="10">GRN</text>
-<text x="-2.032" y="2.032" size="1.27" layer="95" font="vector" ratio="10">BLU</text>
-<text x="-2.032" y="-3.048" size="1.27" layer="95" font="vector" ratio="10">RED</text>
-<text x="3.048" y="-7.112" size="1.27" layer="95" font="vector" ratio="10" rot="R90">GND</text>
-<text x="-2.54" y="10.668" size="1.27" layer="95" font="vector" ratio="10">&gt;NAME</text>
-<text x="8.636" y="5.08" size="1.27" layer="95" font="vector" ratio="10">3.5 mm jack (triple)</text>
+<pin name="BLU" x="-5.08" y="5.08" visible="off" length="short"/>
+<pin name="RED" x="-5.08" y="2.54" visible="off" length="short"/>
+<pin name="GND" x="16.51" y="-2.54" visible="off" length="short" rot="R90"/>
+<text x="-2.286" y="7.874" size="1.27" layer="95" font="vector" ratio="10">GRN</text>
+<text x="-2.286" y="5.334" size="1.27" layer="95" font="vector" ratio="10">BLU</text>
+<text x="-2.286" y="2.794" size="1.27" layer="95" font="vector" ratio="10">RED</text>
+<text x="17.018" y="0.508" size="1.27" layer="95" font="vector" ratio="10" rot="R90">GND</text>
+<text x="2.54" y="-0.762" size="1.27" layer="95" font="vector" ratio="10">&gt;NAME</text>
+<wire x1="-2.54" y1="7.62" x2="2.54" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="3.81" y2="6.35" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="6.35" x2="5.08" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="5.08" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="10.16" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="2.54" x2="11.43" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="11.43" y1="3.81" x2="12.7" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="6.35" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="3.81" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="17.78" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="17.78" y1="10.16" x2="17.78" y2="0" width="0.1524" layer="94"/>
+<wire x1="17.78" y1="0" x2="15.24" y2="0" width="0.1524" layer="94"/>
+<text x="1.27" y="11.43" size="1.27" layer="95" font="vector" ratio="10">3.5 mm jack</text>
 </symbol>
 <symbol name="VCC_1V2">
 <wire x1="-1.016" y1="0.762" x2="0" y2="0.762" width="0.1524" layer="94"/>
@@ -1524,10 +1533,10 @@ Amphenol L77HDE15SD1CH4F</description>
 <devices>
 <device name="" package="JACK_3.5MM_LUMBERG">
 <connects>
-<connect gate="G$1" pin="BLU" pad="2"/>
+<connect gate="G$1" pin="BLU" pad="3"/>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="GRN" pad="4A 4B"/>
-<connect gate="G$1" pin="RED" pad="3"/>
+<connect gate="G$1" pin="RED" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3757,7 +3766,6 @@ OLD Production Socket. DO NOT USE for production boards.</description>
 <part name="CD1" library="c-scape" deviceset="CAP" device="0402-SMALL" value="100n"/>
 <part name="U$191" library="00-own_parts" deviceset="GND" device=""/>
 <part name="CD2" library="c-scape" deviceset="CAP" device="0402-SMALL" value="100n"/>
-<part name="U$192" library="00-own_parts" deviceset="VCC" device=""/>
 <part name="U$193" library="00-own_parts" deviceset="GND" device=""/>
 <part name="CD3" library="c-scape" deviceset="CAP" device="0402-SMALL" value="100n"/>
 <part name="U$195" library="00-own_parts" deviceset="GND" device=""/>
@@ -3773,6 +3781,11 @@ OLD Production Socket. DO NOT USE for production boards.</description>
 <part name="U$187" library="00-own_parts" deviceset="VCC" device=""/>
 <part name="L2" library="c-scape" deviceset="BEAD" device="0402-SMALL"/>
 <part name="L3" library="c-scape" deviceset="BEAD" device="0402-SMALL"/>
+<part name="L4" library="c-scape" deviceset="BEAD" device="0402-SMALL"/>
+<part name="CD6" library="c-scape" deviceset="CAP" device="0402-SMALL" value="100n"/>
+<part name="U$192" library="00-own_parts" deviceset="GND" device=""/>
+<part name="R36" library="c-scape" deviceset="RES" device="0402-SMALL" value="10K"/>
+<part name="U$194" library="00-own_parts" deviceset="VCC_3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3889,7 +3902,7 @@ OLD Production Socket. DO NOT USE for production boards.</description>
 <instance part="U$152" gate="G$1" x="134.62" y="114.3"/>
 <instance part="U$154" gate="G$1" x="134.62" y="106.68"/>
 <instance part="U1" gate="A" x="83.82" y="55.88"/>
-<instance part="J7" gate="G$1" x="144.78" y="55.88"/>
+<instance part="J7" gate="G$1" x="137.16" y="53.34"/>
 <instance part="U$153" gate="G$1" x="78.74" y="22.86"/>
 <instance part="U$155" gate="G$1" x="81.28" y="22.86"/>
 <instance part="U$156" gate="G$1" x="83.82" y="22.86"/>
@@ -3897,7 +3910,7 @@ OLD Production Socket. DO NOT USE for production boards.</description>
 <instance part="U$167" gate="G$1" x="88.9" y="22.86"/>
 <instance part="U$174" gate="G$1" x="60.96" y="33.02"/>
 <instance part="U$175" gate="G$1" x="81.28" y="83.82"/>
-<instance part="U$176" gate="G$1" x="86.36" y="83.82"/>
+<instance part="U$176" gate="G$1" x="86.36" y="83.82" smashed="yes"/>
 <instance part="C36" gate="G$1" x="114.3" y="33.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="113.792" y="34.544" size="1.27" layer="95" font="vector" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="119.634" y="34.544" size="1.27" layer="96" font="vector" ratio="10" rot="R180"/>
@@ -3935,52 +3948,68 @@ OLD Production Socket. DO NOT USE for production boards.</description>
 </instance>
 <instance part="U$184" gate="G$1" x="119.38" y="43.18"/>
 <instance part="U$185" gate="G$1" x="127" y="43.18"/>
-<instance part="U$186" gate="G$1" x="147.32" y="45.72"/>
-<instance part="U$177" gate="G$1" x="83.82" y="83.82"/>
-<instance part="U$178" gate="G$1" x="88.9" y="88.9"/>
-<instance part="U$179" gate="G$1" x="68.58" y="99.06"/>
+<instance part="U$186" gate="G$1" x="153.67" y="50.8"/>
+<instance part="U$177" gate="G$1" x="83.82" y="101.6"/>
+<instance part="U$178" gate="G$1" x="88.9" y="101.6"/>
+<instance part="U$179" gate="G$1" x="60.96" y="93.98"/>
 <instance part="U$181" gate="G$1" x="116.84" y="76.2"/>
-<instance part="U$188" gate="G$1" x="58.42" y="99.06"/>
-<instance part="L1" gate="L1" x="63.5" y="99.06"/>
-<instance part="C39" gate="G$1" x="66.04" y="96.52"/>
-<instance part="U$189" gate="G$1" x="66.04" y="93.98"/>
-<instance part="CD1" gate="G$1" x="91.44" y="83.82" smashed="yes" rot="R90">
-<attribute name="NAME" x="95.758" y="85.598" size="1.27" layer="95" font="vector" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="97.282" y="85.598" size="1.27" layer="96" font="vector" ratio="10"/>
+<instance part="U$188" gate="G$1" x="50.8" y="93.98"/>
+<instance part="L1" gate="L1" x="55.88" y="93.98"/>
+<instance part="C39" gate="G$1" x="58.42" y="91.44"/>
+<instance part="U$189" gate="G$1" x="58.42" y="88.9"/>
+<instance part="CD1" gate="G$1" x="91.44" y="96.52" smashed="yes" rot="R90">
+<attribute name="NAME" x="95.504" y="98.044" size="1.27" layer="95" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="90.932" y="93.98" size="1.27" layer="96" font="vector" ratio="10"/>
 </instance>
-<instance part="U$191" gate="G$1" x="93.98" y="83.82"/>
+<instance part="U$191" gate="G$1" x="93.98" y="96.52"/>
 <instance part="CD2" gate="G$1" x="86.36" y="93.98" smashed="yes">
-<attribute name="NAME" x="84.582" y="99.822" size="1.27" layer="95" font="vector" ratio="10"/>
-<attribute name="VALUE" x="84.582" y="98.298" size="1.27" layer="96" font="vector" ratio="10"/>
+<attribute name="NAME" x="88.138" y="90.424" size="1.27" layer="95" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="88.9" y="88.9" size="1.27" layer="96" font="vector" ratio="10" rot="R180"/>
 </instance>
-<instance part="U$192" gate="G$1" x="86.36" y="96.52"/>
-<instance part="U$193" gate="G$1" x="86.36" y="91.44"/>
-<instance part="CD3" gate="G$1" x="76.2" y="83.82" smashed="yes" rot="R270">
-<attribute name="NAME" x="71.882" y="84.582" size="1.27" layer="95" font="vector" ratio="10"/>
-<attribute name="VALUE" x="71.882" y="85.598" size="1.27" layer="96" font="vector" ratio="10"/>
+<instance part="U$193" gate="G$1" x="86.36" y="91.44" smashed="yes"/>
+<instance part="CD3" gate="G$1" x="76.2" y="96.52" smashed="yes" rot="R270">
+<attribute name="NAME" x="71.12" y="98.298" size="1.27" layer="95" font="vector" ratio="10"/>
+<attribute name="VALUE" x="71.12" y="96.774" size="1.27" layer="96" font="vector" ratio="10"/>
 </instance>
-<instance part="U$195" gate="G$1" x="73.66" y="83.82"/>
-<instance part="CD4" gate="G$1" x="96.52" y="93.98" smashed="yes">
-<attribute name="NAME" x="94.742" y="99.822" size="1.27" layer="95" font="vector" ratio="10"/>
-<attribute name="VALUE" x="94.742" y="98.298" size="1.27" layer="96" font="vector" ratio="10"/>
+<instance part="U$195" gate="G$1" x="73.66" y="96.52" smashed="yes"/>
+<instance part="CD4" gate="G$1" x="99.06" y="93.98" smashed="yes">
+<attribute name="NAME" x="97.79" y="88.9" size="1.27" layer="95" font="vector" ratio="10"/>
+<attribute name="VALUE" x="97.79" y="87.376" size="1.27" layer="96" font="vector" ratio="10"/>
 </instance>
-<instance part="U$196" gate="G$1" x="96.52" y="91.44"/>
-<instance part="CD5" gate="G$1" x="101.6" y="93.98" smashed="yes">
-<attribute name="NAME" x="99.822" y="99.822" size="1.27" layer="95" font="vector" ratio="10"/>
-<attribute name="VALUE" x="99.822" y="98.298" size="1.27" layer="96" font="vector" ratio="10"/>
+<instance part="U$196" gate="G$1" x="99.06" y="91.44"/>
+<instance part="CD5" gate="G$1" x="104.14" y="93.98" smashed="yes">
+<attribute name="NAME" x="102.87" y="88.9" size="1.27" layer="95" font="vector" ratio="10"/>
+<attribute name="VALUE" x="102.87" y="87.376" size="1.27" layer="96" font="vector" ratio="10"/>
 </instance>
-<instance part="U$197" gate="G$1" x="101.6" y="91.44"/>
-<instance part="U$198" gate="G$1" x="96.52" y="96.52"/>
-<instance part="U$199" gate="G$1" x="101.6" y="96.52"/>
-<instance part="C41" gate="G$1" x="78.74" y="106.68" smashed="yes">
-<attribute name="NAME" x="77.724" y="101.6" size="1.27" layer="95" font="vector" ratio="10"/>
-<attribute name="VALUE" x="77.724" y="100.076" size="1.27" layer="96" font="vector" ratio="10"/>
+<instance part="U$197" gate="G$1" x="104.14" y="91.44"/>
+<instance part="U$198" gate="G$1" x="99.06" y="96.52"/>
+<instance part="U$199" gate="G$1" x="104.14" y="96.52"/>
+<instance part="C41" gate="G$1" x="109.22" y="93.98" smashed="yes">
+<attribute name="NAME" x="108.204" y="88.9" size="1.27" layer="95" font="vector" ratio="10"/>
+<attribute name="VALUE" x="108.204" y="87.376" size="1.27" layer="96" font="vector" ratio="10"/>
 </instance>
-<instance part="U$200" gate="G$1" x="78.74" y="104.14"/>
-<instance part="U$190" gate="G$1" x="78.74" y="109.22"/>
-<instance part="U$187" gate="G$1" x="78.74" y="88.9"/>
-<instance part="L2" gate="L1" x="78.74" y="86.36" rot="R90"/>
-<instance part="L3" gate="L1" x="88.9" y="86.36" rot="R90"/>
+<instance part="U$200" gate="G$1" x="109.22" y="91.44"/>
+<instance part="U$190" gate="G$1" x="109.22" y="96.52"/>
+<instance part="U$187" gate="G$1" x="78.74" y="101.6"/>
+<instance part="L2" gate="L1" x="78.74" y="99.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="77.978" y="100.838" size="1.27" layer="95" font="vector" ratio="10" rot="R180"/>
+</instance>
+<instance part="L3" gate="L1" x="88.9" y="99.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="91.694" y="101.092" size="1.27" layer="95" font="vector" ratio="10" rot="R180"/>
+</instance>
+<instance part="L4" gate="L1" x="83.82" y="99.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="83.058" y="100.838" size="1.27" layer="95" font="vector" ratio="10" rot="R180"/>
+</instance>
+<instance part="CD6" gate="G$1" x="25.4" y="45.72" smashed="yes">
+<attribute name="NAME" x="24.13" y="40.64" size="1.27" layer="95" font="vector" ratio="10"/>
+<attribute name="VALUE" x="24.13" y="39.116" size="1.27" layer="96" font="vector" ratio="10"/>
+</instance>
+<instance part="U$192" gate="G$1" x="25.4" y="43.18"/>
+<instance part="R36" gate="G$1" x="25.4" y="50.8" smashed="yes" rot="R180">
+<attribute name="NAME" x="20.574" y="49.784" size="1.27" layer="95" font="vector" ratio="10"/>
+<attribute name="VALUE" x="20.574" y="49.276" size="1.27" layer="96" font="vector" ratio="10" rot="MR180"/>
+</instance>
+<instance part="U$194" gate="G$1" x="25.4" y="53.34"/>
 </instances>
 <busses>
 </busses>
@@ -4158,6 +4187,10 @@ OLD Production Socket. DO NOT USE for production boards.</description>
 <pinref part="C41" gate="G$1" pin="2"/>
 <pinref part="U$200" gate="G$1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="CD6" gate="G$1" pin="2"/>
+<pinref part="U$192" gate="G$1" pin="GND"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -4194,7 +4227,11 @@ OLD Production Socket. DO NOT USE for production boards.</description>
 <segment>
 <pinref part="U$188" gate="G$1" pin="VDD_3V3"/>
 <pinref part="L1" gate="L1" pin="P$2"/>
-<wire x1="58.42" y1="99.06" x2="60.96" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="93.98" x2="53.34" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R36" gate="G$1" pin="2"/>
+<pinref part="U$194" gate="G$1" pin="VDD_3V3"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -4533,44 +4570,40 @@ OLD Production Socket. DO NOT USE for production boards.</description>
 <wire x1="104.14" y1="71.12" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="BLUE" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="DAC2/PB/LUMA/B"/>
 <wire x1="104.14" y1="58.42" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R34" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="58.42" x2="139.7" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="58.42" x2="132.08" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="48.26" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
 <junction x="119.38" y="58.42"/>
 <pinref part="J7" gate="G$1" pin="BLU"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="GREEN" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="DAC1/Y/G/CVBS"/>
-<wire x1="104.14" y1="63.5" x2="127" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="60.96" x2="127" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R35" gate="G$1" pin="2"/>
-<wire x1="127" y1="48.26" x2="127" y2="63.5" width="0.1524" layer="91"/>
-<junction x="127" y="63.5"/>
-<wire x1="127" y1="63.5" x2="139.7" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="127" y1="48.26" x2="127" y2="60.96" width="0.1524" layer="91"/>
+<junction x="127" y="60.96"/>
+<wire x1="127" y1="60.96" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="J7" gate="G$1" pin="GRN"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="RED" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="DAC3/PR/CHROMA/R"/>
-<wire x1="104.14" y1="53.34" x2="111.76" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="55.88" x2="111.76" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="R33" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="53.34" x2="139.7" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="48.26" x2="111.76" y2="53.34" width="0.1524" layer="91"/>
-<junction x="111.76" y="53.34"/>
+<wire x1="111.76" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="48.26" x2="111.76" y2="55.88" width="0.1524" layer="91"/>
+<junction x="111.76" y="55.88"/>
 <pinref part="J7" gate="G$1" pin="RED"/>
 </segment>
 </net>
 <net name="VCC" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="VAA"/>
-<pinref part="U$177" gate="G$1" pin="VCC"/>
-</segment>
 <segment>
 <pinref part="C38" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="76.2" x2="116.84" y2="76.2" width="0.1524" layer="91"/>
@@ -4579,13 +4612,9 @@ OLD Production Socket. DO NOT USE for production boards.</description>
 <segment>
 <pinref part="L1" gate="L1" pin="P$1"/>
 <pinref part="U$179" gate="G$1" pin="VCC"/>
-<wire x1="66.04" y1="99.06" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="93.98" x2="60.96" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="C39" gate="G$1" pin="1"/>
-<junction x="66.04" y="99.06"/>
-</segment>
-<segment>
-<pinref part="CD2" gate="G$1" pin="1"/>
-<pinref part="U$192" gate="G$1" pin="VCC"/>
+<junction x="58.42" y="93.98"/>
 </segment>
 <segment>
 <pinref part="U$187" gate="G$1" pin="VCC"/>
@@ -4595,14 +4624,19 @@ OLD Production Socket. DO NOT USE for production boards.</description>
 <pinref part="U$178" gate="G$1" pin="VCC"/>
 <pinref part="L3" gate="L1" pin="P$1"/>
 </segment>
+<segment>
+<pinref part="U$177" gate="G$1" pin="VCC"/>
+<pinref part="L4" gate="L1" pin="P$1"/>
+</segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="VDD@1"/>
 <pinref part="CD1" gate="G$1" pin="1"/>
-<junction x="88.9" y="83.82"/>
 <pinref part="CD1" gate="G$1" pin="1"/>
 <pinref part="L3" gate="L1" pin="P$2"/>
+<junction x="88.9" y="96.52"/>
+<wire x1="88.9" y1="96.52" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -4610,8 +4644,29 @@ OLD Production Socket. DO NOT USE for production boards.</description>
 <pinref part="U1" gate="A" pin="VDD_IO"/>
 <pinref part="CD3" gate="G$1" pin="1"/>
 <pinref part="L2" gate="L1" pin="P$2"/>
-<junction x="78.74" y="83.82"/>
+<junction x="78.74" y="96.52"/>
 <pinref part="L2" gate="L1" pin="P$2"/>
+<junction x="78.74" y="96.52"/>
+<wire x1="78.74" y1="96.52" x2="78.74" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="VAA"/>
+<pinref part="L4" gate="L1" pin="P$2"/>
+<wire x1="83.82" y1="96.52" x2="83.82" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="CD2" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="96.52" x2="86.36" y2="96.52" width="0.1524" layer="91"/>
+<junction x="83.82" y="96.52"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="!RESET"/>
+<wire x1="60.96" y1="48.26" x2="25.4" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="CD6" gate="G$1" pin="1"/>
+<pinref part="R36" gate="G$1" pin="1"/>
+<junction x="25.4" y="48.26"/>
 </segment>
 </net>
 </nets>
